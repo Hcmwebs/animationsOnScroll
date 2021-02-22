@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgba(101, 207, 242, 0.6);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  min-height: 40px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(198, 236, 234, 0.99);
+  background-color: rgba(15, 102, 131, 0.7);
+}
+header .logo {
+  width: 100px;
+}
+
+header .logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+nav {
+  max-width: 80%;
+  padding: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  /* width: 80%; */
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navbar li {
+  display: block; /*===@medias(max-width: 700px) ===*/
+  font-size: 1.3rem;
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  /* background-color: #c5c5c5; */
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .navbar li {
+    display: inline-block;
+  }
+}
