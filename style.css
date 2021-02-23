@@ -159,14 +159,21 @@ p {
 
 .toolsLinks {
   width: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .toolsLinks i {
+  width: 300px;
+  height: 300px;
+  font-size: 20rem;
+  display: grid;
+  place-items: center;
   margin: 2rem auto;
-  object-fit: cover;
-  background-color: var(--headerBgColor);
+  border-radius: 0.4rem;
+  color: var(--headerBgColor);
   box-shadow: var(--boxShadow);
 }
 
