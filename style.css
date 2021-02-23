@@ -75,6 +75,7 @@ nav a:hover {
   color: var(--headerBgColor);
   background-color: var(--headerTextColor);
   box-shadow: var(--boxShadow);
+  border-radius: 0.4rem;
 }
 
 /* === main === */
@@ -136,7 +137,7 @@ p {
 .sectImg {
   width: 400px;
   height: 400px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,6 +180,47 @@ p {
 
 .order2 {
   order: 2;
+}
+
+.profile {
+  border-radius: 50%;
+}
+img.resizeImg {
+  object-fit: contain;
+}
+footer {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--headerBgColor);
+  color: var(--headerTextColor);
+}
+
+footer .cta {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+footer .social-links {
+  max-width: 300px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.social-links i {
+  width: 100px;
+  height: 100px;
+  font-size: 7rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  display: grid;
+  place-items: center;
+  color: var(--headerTextColor);
 }
 
 /* === footer === */

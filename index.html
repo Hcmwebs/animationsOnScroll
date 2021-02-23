@@ -8,6 +8,7 @@
       src="https://kit.fontawesome.com/e70f625b30.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Animations On Scroll</title>
   </head>
@@ -35,11 +36,11 @@
             </p>
           </div>
           <div class="sectImg">
-            <img src="/images/smileProfile.jpg" alt="Smile" />
+            <img src="/images/smileProfile.jpg" alt="Smile" class="profile" />
           </div>
         </section>
         <section id="about">
-          <div class="sectHead">
+          <div class="sectHead" data-aos="fade-right">
             <h2>About me</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
@@ -47,10 +48,40 @@
               cumque hic?
             </p>
           </div>
-          <div class="sectImg order2">
+          <div class="sectImg order2" data-aos="fade-left">
             <img src="/images/coding.jpg" alt="coding" />
           </div>
         </section>
+        <section id="projects">
+          <div class="sectHead" data-aos="fade-right">
+            <h2>Interior</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              atque incidunt ipsam illum deserunt fugiat deleniti minima tenetur
+              cumque hic?
+            </p>
+          </div>
+          <div class="sectImg order2" data-aos="fade-left">
+            <img src="/images/desktop.png" alt="Interior" />
+          </div>
+
+          <div class="sectHead" data-aos="fade-right">
+            <h2>FAQ</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+              atque incidunt ipsam illum deserunt fugiat deleniti minima tenetur
+              cumque hic?
+            </p>
+          </div>
+          <div class="sectImg order2" data-aos="fade-left">
+            <img
+              src="/images/Desktop2.png"
+              alt="FAQ Component"
+              class="resizeImg"
+            />
+          </div>
+        </section>
+
         <section id="tools" class="tools">
           <h2>Tools</h2>
           <div class="toolsLinks">
@@ -62,22 +93,30 @@
             <i class="fab fa-python"></i>
           </div>
         </section>
-        <section id="">Testimonials</section>
       </main>
 
       <footer>
-        <div class="cta">
+        <div class="cta order2">
           <address>33 Norman Street</address>
           <address>Sherry Lane</address>
           <address>Lincoln</address>
           <address>Surinam</address>
         </div>
+
         <div class="social-links">
-          <i>Github</i>
-          <i>twitter</i>
-          <i>Email</i>
+          <i class="fab fa-github-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fas fa-envelope-square"></i>
         </div>
       </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
