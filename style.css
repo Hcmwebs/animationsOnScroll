@@ -94,13 +94,18 @@ section {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
+  transition: all 1s ease-in;
 }
 
 section:nth-child(odd) {
   background-color: rgba(255, 255, 255, 0.4);
+  transform: translateX(0px);
+  opacity: 1;
 }
 section:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.6);
+  transform: translateX(0px);
+  opacity: 1;
 }
 .sectHead {
   width: 100%;
@@ -178,16 +183,8 @@ p {
   box-shadow: var(--boxShadow);
 }
 
-.order2 {
-  order: 2;
-}
+/* === footer === */
 
-.profile {
-  border-radius: 50%;
-}
-img.resizeImg {
-  object-fit: contain;
-}
 footer {
   width: 100%;
   min-height: 50vh;
@@ -223,7 +220,27 @@ footer .social-links {
   color: var(--headerTextColor);
 }
 
-/* === footer === */
+/* === helperclasses === */
+.order2 {
+  order: 2;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+img.resizeImg {
+  object-fit: contain;
+}
+
+section:nth-child(odd).move {
+  transform: translate(-50px);
+  opacity: 0;
+}
+section:nth-child(even).move {
+  transform: translate(50px);
+  opacity: 0;
+}
 
 /* === medias === */
 

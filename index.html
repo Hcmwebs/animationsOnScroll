@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/e70f625b30.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="style.css" />
     <title>Animations On Scroll</title>
   </head>
@@ -27,7 +27,7 @@
       </header>
 
       <main class="mainContent">
-        <section id="home" class="home">
+        <section id="home" class="home move">
           <div class="sectHead">
             <h1 id="titletext">Lorem ipsum dolor sit amet.</h1>
             <p>
@@ -39,7 +39,8 @@
             <img src="/images/smileProfile.jpg" alt="Smile" class="profile" />
           </div>
         </section>
-        <section id="about">
+
+        <section id="about" class="move">
           <div class="sectHead" data-aos="fade-right">
             <h2>About me</h2>
             <p>
@@ -52,7 +53,7 @@
             <img src="/images/coding.jpg" alt="coding" />
           </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="move">
           <div class="sectHead" data-aos="fade-right">
             <h2>Interior</h2>
             <p>
@@ -62,7 +63,7 @@
             </p>
           </div>
           <div class="sectImg order2" data-aos="fade-left">
-            <img src="/images/desktop.png" alt="Interior" />
+            <img src="/images/coding.jpg" alt="Interior" />
           </div>
 
           <div class="sectHead" data-aos="fade-right">
@@ -75,14 +76,14 @@
           </div>
           <div class="sectImg order2" data-aos="fade-left">
             <img
-              src="/images/Desktop2.png"
+              src="/images/coding.jpg"
               alt="FAQ Component"
               class="resizeImg"
             />
           </div>
         </section>
 
-        <section id="tools" class="tools">
+        <section id="tools" class="tools move">
           <h2>Tools</h2>
           <div class="toolsLinks">
             <i class="fab fa-html5"></i>
@@ -111,12 +112,13 @@
       </footer>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         offset: 400,
         duration: 1000,
       });
-    </script>
+    </script> -->
+    <script src="main.js"></script>
   </body>
 </html>
